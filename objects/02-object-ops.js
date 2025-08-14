@@ -85,14 +85,41 @@ for (let restaurant of restaurants) {
 /*
 	Create two objects representing different local attractions (zoo, gardens, museums, etc), each with the following properties: name, location, adultTicketPrice, childTicketPrice, and famousFeatures (array of three strings). Be creative! Place the objects in an array.
 */
+let zoo = {
+	name: "TuPac Zoo",
+	location: "South Carolina",
+	adultTicketPrice: 50,
+	childTicketPrice: 25,
+	famousFeatures: ["Barking", "Petting", "Howling"]
+};
+
+let museums = {
+	name: "Mona-Lisa",
+	location: "Kansas City",
+	adultTicketPrice: 25,
+	childTicketPrice: 10,
+	famousFeatures: ["Paintings", "Statues", "Artifacts"]
+};
 
 // TODO: create objects and put them in an array
+let localAttractions = [zoo, museums];
 
+console.log(localAttractions);
 /*
 	Loop through the array, then within that for loop, use a for...in loop to grab values from each key and print them to the console. If you come across a key storing an array, print each element in the array instead of the array itself. Remember that you need a new index variable with each nested FOR loop (i, j are common).
 
 	NOTE: This is a tough one to think through when you're new at this. If you get completely stuck, reference the solution that accompanies this starter code. But make an effort to figure it out yourself first!
 */
+for (let localAttraction of localAttractions) {
+	for (let key in localAttraction){
+		console.log(localAttraction[key]);
+		if (Array.isArray(localAttraction[key])) {
+			for (let el of localAttraction[key]) {
+				console.log(el)
+			}
+		}
+	}
+}
 
 // TODO: use nested loops to print values inside objects
 
