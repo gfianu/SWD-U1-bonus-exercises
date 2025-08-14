@@ -139,6 +139,6 @@ for (let localAttraction of localAttractions) {
 // **********************************************
 
 for (let local of localAttractions) {
-	console.log(`A fovorite with the ${local.location} locals, the ${local.name} boasts over a dozen features features, including ${local.famousFeatures[0]}, ${local.famousFeatures[1]}, and ${local.famousFeatures[2]}.\nAdmission is $${local.adultTicketPrice} for adults, $${local.childTicketPrice} for children ages 5-12, and free for children 4 and under.`)
+	console.log(`A fovorite with the ${local.location} locals, the ${local.name}, boasts over a dozen features features, including ${local.famousFeatures[0]}, ${local.famousFeatures[1]}, and ${local.famousFeatures[2]}.\nAdmission is $${local.adultTicketPrice} for adults, $${local.childTicketPrice} for children ages 5-12, and free for children 4 and under.`)
 }
 
