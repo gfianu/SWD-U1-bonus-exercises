@@ -134,7 +134,7 @@ for (let localAttraction of localAttractions) {
 
 // TODO: Print a template literal
 // **********************************************
-// Kendrick-Lampton Art Museum - Cedar Pointe, ID
+// Local Attractions All Around the World!!!!!!
 // **********************************************
 
 for (let local of localAttractions) {
