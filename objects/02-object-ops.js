@@ -112,14 +112,15 @@ console.log(localAttractions);
 */
 for (let localAttraction of localAttractions) {
 	for (let key in localAttraction){
-		console.log(localAttraction[key]);
 		if (Array.isArray(localAttraction[key])) {
 			for (let el of localAttraction[key]) {
-				console.log(el)
+				console.log(el);
 			}
+		} else {
+			console.log(localAttraction[key]);
 		}
 	}
-}
+};
 
 // TODO: use nested loops to print values inside objects
 
